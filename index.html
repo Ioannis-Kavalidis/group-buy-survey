@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Group-Sharing Survey Form</title>
+  </head>
+  
+  <body>
+  	 <h1 id="title">Group-Sharing</h1>
+  	 <p id="description"><strong>Anything is possible when you put your mind to it!<br>
+          Money should not be an object to retract you from your path to knoweldege<br>
+          That's our vision: to bring you one step closer to reaching your potentials</strong></p><br>
+     <div>
+  	 <p>Fill in your preferences below and inform us with your main interests:</p>
+         <form id="survey-form" action="" name="my survey form" method="POST">
+         	<div>
+         	<div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">What is the main reasons that compell you into Group-Sharing?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option value>Select an option</option>
+      <option value="learner">Full-Time Learner</option>
+      <option value="career">Career Enhancement / Change</option>
+      <option value="business">Business Interest</option>
+      <option value="selfImprovement">Self-Improvement Interest</option>
+      <option value="preferNo">Prefer not to say</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">How likely is that you would recommend Group-Sharing to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Never<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you like most in Group-Sharing: </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="prices">Low Prices offered</option>
+      <option value="options">Vast Options handed</option>
+      <option value="knoweledge">Specific Knoweledge gained</option>
+      <option value="community">Being part of a Community</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Financial Courses</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Investing  Newsletters</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Life Improvement Courses</label></li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Business Courses</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Marketing Courses</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Active Community Platform</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">City Meetups</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Additional Courses</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+         </div><br>
+
+    <footer><strong>© Created by Ioannis Kavalidiss</strong></footer>
+  </body>
+</html>
